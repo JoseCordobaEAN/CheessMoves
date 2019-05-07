@@ -1,5 +1,5 @@
 # CheessMoves
-<center>![alt ajedrez](img/composicion-juegos-mesa_1284-18306.jpg)</center>
+<center><img src="img/composicion-juegos-mesa_1284-18306.jpg"></center>
 
 Su equipo ha sido comisionado para eleborar la funcionalidad de los movimientos de las
 piezas del ajedrez en un tablero 8 x 8.
