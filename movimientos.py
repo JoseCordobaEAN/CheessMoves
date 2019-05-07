@@ -1,4 +1,15 @@
 def tablero_a_cadena(tablero):
+    """
+    list of list -> str
+
+    >>> tablero_a_cadena()
+
+    >>> tablero_a_cadena()
+
+
+    :param tablero:
+    :return:
+    """
     cadena = ""
     for fila in tablero:
         cadena += str(fila) + "\n"
