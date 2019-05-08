@@ -2,10 +2,9 @@ def tablero_a_cadena(tablero):
     """
     list of list -> str
 
-    >>> tablero_a_cadena([['t', 'k', 'a', 'q', 'r', 'a', 'k', 't'], ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'], ['T', 'K', 'A', 'R', 'Q', 'A', 'K', 'T']])
-"['t', 'k', 'a', 'q', 'r', 'a', 'k', 't']\n['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p']\n[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']\n[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']\n[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']\n[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']\n['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P']\n['T', 'K', 'A', 'R', 'Q', 'A', 'K', 'T']\n"
-    >>> tablero_a_cadena(['', 'T', 'a'])
-
+    >>> tablero_a_cadena([['t', 'k', 'a', 'q', 'r', 'a', 'k', 't'], ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p']])
+    "['t', 'k', 'a', 'q', 'r', 'a', 'k', 't']
+    ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p']"
 
     :param tablero: list of list que representa el tablero
     :return: str que representa los valores del tablero
