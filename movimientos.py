@@ -37,3 +37,7 @@ def obtener_nombre_pieza(simbolo):
         return 'Rey ' + tipo
     else:
         return 'No es una pieza'
+
+
+def mover_torre(tablero, x_inicial, y_inicial, x_final, y_final):
+    pass
