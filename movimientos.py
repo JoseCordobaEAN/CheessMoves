@@ -59,10 +59,6 @@ def mover_torre(tablero, x_inicial, y_inicial, x_final, y_final):
                 if tablero[y][x_inicial] != ' ':
                     raise Exception('No hay camino para mover la torre')
 
-
-
-
-
         # Valido el movimiento en x
         elif x_inicial != x_final and y_inicial == y_final:
             # validar si me muevo a la derecha
@@ -73,20 +69,21 @@ def mover_torre(tablero, x_inicial, y_inicial, x_final, y_final):
 
             # Reviso el camino por obtaculos
             for x in range(x_auxiliar, x_final):
-                if tablero[x][y_inicial] != ' ':
+                if tablero[y_inicial][x] != ' ':
                     raise Exception('No hay camino para mover la torre')
 
-
+        # El movimiento no es en linea recta o no hay movimiento
         else:
             raise Exception('Movimiento invalido para la torre')
 
-        if tablero[y_final][x_inicial] == ' ' \
-                or (tablero[y_inicial][x_inicial].islower() != tablero[y_final][x_inicial].islower()):
-            tablero[y_final][x_inicial] = tablero[y_inicial][x_inicial]
+        # Verifico la posición de destino
+        if tablero[y_final][x_final] == ' ' \
+                or (tablero[y_inicial][x_inicial].islower() != tablero[y_final][x_final].islower()):
+            tablero[y_final][x_final] = tablero[y_inicial][x_inicial]
             tablero[y_inicial][x_inicial] = ' '
         else:
             raise Exception('No puedo comer mis propias piezas')
 
     else:
-        raise Exception('La pieza en x = {0} y={1} no es una torre'.format(x_inicial,y_inicial))
+        raise Exception('La pieza en x = {0} y= {1} no es una torre'.format(x_inicial,y_inicial))
     return tablero
